@@ -16,7 +16,6 @@ func myNew() {
 	mux1.HandleFunc("/", handlerOne)
 
 	go func() {
-		fmt.Println("in 40....")
 		http.ListenAndServe(":8083", mux1)
 	}()
 
@@ -28,7 +27,6 @@ func myTwo() {
 	mux2.HandleFunc("/", handlerTwo)
 
 	go func() {
-		fmt.Println("in 57....")
 		http.ListenAndServe(":8084", mux2)
 	}()
 
