@@ -35,6 +35,7 @@ func myNew() {
 	})
 	log.Println("Server started on :8083")
 	http.ListenAndServe(":8083", mux1)
+	//log.Fatal(http.ListenAndServe(":8083", mux1))
 
 }
 
@@ -48,6 +49,5 @@ func myTwo() {
 	})
 	log.Println("Server started on :8084")
 	http.ListenAndServe(":8084", mux2)
-
 	//log.Fatal(http.ListenAndServe(":8084", mux2))
 }
