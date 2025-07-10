@@ -4,7 +4,6 @@ import "fmt"
 
 func main() {
 	fmt.Println("in Main")
-	myNew()
+	go myNew()
 	myTwo()
-	select {}
 }
